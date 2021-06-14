@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "amplify:jobsCrawler": "cd amplify/backend/function/jobsCrawler && npm ci && tsc -p ./tsconfig.json && cd -"
   },
   "dependencies": {
     "next": "10.2.3",
